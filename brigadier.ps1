@@ -26,7 +26,7 @@
 Param(
     # Model identifier to use, defaulting to the current machine's model.
     [Parameter(ParameterSetName='Download')]
-    [string]$Model = ('MacBook8,1'),
+    [string]$Model = ('MacBook8,1'), <# Trick Boot Camp to install on unsupported hardware, useful for Windows users that need to install drivers to use Apple peripherals that do no own Apple hardware running Windows. #>
 
     # After the installer is downloaded, perform the install automatically.
     [Parameter(ParameterSetName='Install',
